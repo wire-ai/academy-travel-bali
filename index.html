@@ -22,11 +22,14 @@
     <!-- Home section -->
     <section
       id="home"
-      class="relative flex-none w-screen min-h-screen bg-cover bg-[url('img/ImageBackground.png')] snap-start"
+      class="relative flex-none w-screen min-h-screen bg-secondary opacity-90 snap-start"
     >
-      <div
-        class="flex flex-col items-center min-h-screen bg-secondary opacity-90"
-      >
+      <img
+        src="img/ImageBackground.png"
+        alt="Background"
+        class="absolute object-cover w-full h-full mix-blend-overlay"
+      />
+      <div class="absolute flex flex-col items-center w-screen">
         <img
           src="./img/IconBali.png"
           alt="Icon Bali"
@@ -39,19 +42,19 @@
           A Better way to
           <span class="block text-primary">Travel to Bali</span>
         </p>
-        <small class="block text-xs text-white md:text-lg bg-rose-500"
+        <small class="block text-xs text-white md:text-lg"
           >Cheapest and Esier</small
         >
         <div class="mt-20 md:mt-24">
           <a
             href="#about"
-            class="py-2 mr-2 text-xs tracking-widest border-2 rounded-lg md:text-lg px-7 md:mr-5 font-pacifico text-primary border-primary md:px-11"
+            class="py-2 mr-2 text-xs tracking-widest text-white duration-200 ease-in border-2 border-white rounded-lg md:text-lg px-7 md:mr-5 font-pacifico md:px-11 hover:bg-primary hover:text-white hover:border-primary"
           >
             About Us
           </a>
           <a
             href="#reservation"
-            class="px-6 py-2 text-xs tracking-widest text-white border-2 rounded-lg font-pacifico bg-primary border-primary md:px-11 md:text-lg"
+            class="px-6 py-2 text-xs tracking-widest text-white duration-200 ease-in border-2 rounded-lg font-pacifico bg-primary border-primary md:px-11 md:text-lg hover:bg-inherit hover:border-white"
           >
             Reservation
           </a>
@@ -63,10 +66,15 @@
     <!-- About section -->
     <section
       id="about"
-      class="relative flex-none w-screen min-h-screen bg-cover bg-about-page snap-start"
+      class="relative flex-none w-screen min-h-screen bg-secondary opacity-90 snap-start"
     >
+      <img
+        src="img/bg1.png"
+        alt="Background"
+        class="absolute object-cover w-full h-full mix-blend-overlay"
+      />
       <div
-        class="flex flex-col items-center justify-center min-h-screen text-white opacity-75 bg-secondary"
+        class="flex flex-col items-center justify-center min-h-screen text-white"
       >
         <h1 class="text-4xl mb-11 text-primary font-pacifico">About Us</h1>
         <p class="px-4 text-xl text-center md:max-w-xl font-sansPro">
@@ -85,10 +93,15 @@
     <!-- Reservation section -->
     <section
       id="reservation"
-      class="relative flex-none object-center w-screen min-h-screen bg-cover bg-reservation snap-start"
+      class="relative flex-none object-center w-screen min-h-screen bg-secondary opacity-90 snap-start"
     >
+      <img
+        src="img/bg2.png"
+        alt="Background"
+        class="absolute object-cover w-full h-full mix-blend-overlay"
+      />
       <div
-        class="flex flex-col items-center justify-center min-h-screen opacity-75 bg-secondary"
+        class="absolute flex flex-col items-center justify-center w-screen min-h-screen"
       >
         <h1 class="text-4xl leading-loose font-pacifico text-primary">
           Reservation
@@ -134,7 +147,7 @@
 
             <button
               type="submit"
-              class="box-border w-full py-3 mt-3 tracking-wider text-white transition duration-300 rounded-lg focus:outline-none focus:ring-4 focus:border focus:ring-primary/50 focus:border-slate-100/50 bg-primary font-pacifico"
+              class="box-border w-full py-3 mt-3 tracking-wider text-white transition duration-300 rounded-lg focus:outline-none focus:ring-4 focus:border focus:ring-primary/50 focus:border-slate-100/50 bg-primary font-pacifico hover:opacity-90"
             >
               Submit
             </button>
